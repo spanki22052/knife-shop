@@ -1,0 +1,267 @@
+.wrapper {
+	background-color: #efefef;
+	width: 100%;
+	padding: 5px 30px;
+	padding-top: 50px;
+	display: flex;
+	height: auto;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	@media (min-width: 1600px) {
+		margin-left: 300px;
+		width: calc(100% - 300px);
+	}
+
+	@media (max-width: 960px) {
+		margin-top: 0;
+	}
+
+	@media (max-width: 768px) {
+		padding-top: 20px;
+
+	}
+
+	@media (max-width: 1324px) {
+		.bigPhoto {
+			display: none;
+		}
+
+		.productInfo {
+			width: 70% !important;
+			min-width: 300px;
+		}
+
+		.photosHolder {
+			width: 100% !important;
+			height: 250px !important;
+			flex-direction: row !important;
+			overflow-x: auto;
+			scrollbar-width: thin;
+			justify-content: space-between !important;
+
+			img {
+				width: 60vw !important;
+				height: 200px !important;
+				margin-left: 50px !important;
+			}
+
+			&::-webkit-scrollbar {
+				height: 4px !important;
+				background-color: #f5f5f5;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background-color: #92140c;
+			}
+		}
+	}
+
+	.photosHolder {
+		width: 10%;
+		height: 50vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		img {
+			width: 150px;
+			height: 150px;
+			object-fit: contain;
+			cursor: pointer;
+		}
+	}
+
+	.bigPhoto {
+		width: 60%;
+		height: 60vh;
+		object-fit: cover;
+		padding: 30px;
+	}
+
+	.productInfo {
+ 		width: 30%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+
+		h1 {
+			margin-top: 25px;
+			font-size: 1.2em;
+		}
+
+		.productCode {
+			margin-top: 20px;
+			font-size: 0.7em;
+			color: #9f9f9f;
+		}
+
+		.color {
+			width: 100%;
+			text-align: left;
+			font-size: 16px;
+			margin-top: 20px;
+
+			span {
+				color: #969696;
+				font-size: 16px;
+				margin-top: 20px;
+			}
+		}
+
+		.priceBlock {
+			margin-top: 30px;
+			width: 320px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.firstPrice {
+				font-size: 0.75em;
+				font-weight: 600;
+			}
+
+			.secondPrice {
+				font-size: 0.65em;
+				font-weight: 500;
+				color: #9f9f9f;
+				text-decoration: line-through;
+			}
+
+			.discount {
+				width: auto;
+				padding: 0px 20px;
+				height: 30px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #92140c;
+				font-size: 0.6em;
+				color: white;
+				text-align: center;
+				margin-top: -7px;
+			}
+
+			.displayNone {
+				display: none;
+			}
+		}
+
+		.selectorHolder {
+			width: 100%;
+			margin-top: 20px;
+			display: flex;
+			justify-content: space-between;
+
+			button {
+				width: 130px;
+				height: 40px;
+				border: 0;
+				background-color: #92140c;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				svg {
+					fill: white;
+				}
+
+				outline: none;
+			}
+
+			.dropdown {
+				width: 180px;
+				height: 40px;
+				padding: 10px 15px;
+				border: 1px solid #bfbfbf;
+				background-color: white;
+				position: relative;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				svg {
+					width: 20px;
+					height: 20px;
+					right: 5px;
+				}
+
+				.rotate {
+					transition: all 0.2s linear;
+					transform: rotate(180deg);
+				}
+
+				.rot {
+					transition: all 0.2s linear;
+					transform: rotate(0);
+				}
+
+				span {
+					font-size: 0.7em;
+				}
+
+				.active {
+					transition: all 0.2s linear !important;
+					border: 1px solid #bfbfbf !important;
+					max-height: 10em !important;
+				}
+
+				.downDropdown {
+					position: absolute;
+					width: 180px;
+					top: 39px;
+					background-color: white;
+					width: 100%;
+					transition: all 0.2s linear !important;
+					left: 0;
+					overflow: hidden;
+					border: 0;
+					max-height: 0;
+
+					.pHolder {
+						width: 100%;
+						padding: 5px 15px;
+						cursor: pointer;
+
+						&:hover {
+							background: #f7f7f7;
+						}
+
+						p {
+							font-size: 0.7em;
+						}
+					}
+				}
+			}
+		}
+
+		.descriptionBlock {
+			border-top: 1px solid #d9d9d9;
+			margin-top: 35px;
+
+			h1 {
+				font-size: 0.9em;
+				font-weight: 500;
+				line-height: 20px;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 17px;
+				line-height: 20px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.blur {
+	filter: blur(4px);
+	cursor: default;
+
+	* {
+		pointer-events: none;
+	}
+}
