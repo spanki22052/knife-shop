@@ -61,9 +61,10 @@
 		width: 10%;
 		height: 50vh;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		flex-direction: column;
+		margin-top: 30px;
 
 		img {
 			width: 150px;
@@ -76,7 +77,7 @@
 	.bigPhoto {
 		width: 60%;
 		height: 60vh;
-		object-fit: cover;
+		object-fit: scale-down;
 		padding: 30px;
 	}
 
