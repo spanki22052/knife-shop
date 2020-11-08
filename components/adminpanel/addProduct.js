@@ -1,10 +1,17 @@
 import classes from "../../styles/product.module.scss";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  categoryLoaded,
+  emptyCategoryLoaded,
+  productLoaded,
+  addDataFromLocalstorage,
+} from "../../modules/actions";
 import firebase from "firebase";
 
 export default () => {
   let mnState = useSelector((state) => state.data);
+  const dispatch = useDispatch();
   const [arrow, setArrow] = useState(false);
   const [menuState, setMenu] = useState(mnState);
   const [currentInfo, setInfo] = useState(
@@ -51,7 +58,7 @@ export default () => {
     newMenuObj["productList"] = [...newMenuObj.productList, newObj];
 
     setMenu(newMenuObj);
-    console.log(newMenuObj.productList);
+    dispatch(productLoaded(newMenuObj.productList));
     firebase
       .firestore()
       .collection("knives-shop")

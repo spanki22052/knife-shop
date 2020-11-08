@@ -1,10 +1,12 @@
 import classes from "../../styles/podcategory.module.scss";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { categoryLoaded, emptyCategoryLoaded } from "../../modules/actions";
+import { useDispatch, useSelector } from "react-redux";
 import cyrillicToTranslit from "cyrillic-to-translit-js";
 import firebase from "firebase";
 
 export default () => {
+  const dispatch = useDispatch();
   const [arrow, setArrow] = useState(false);
   let mnState = useSelector((state) => state.data);
   const [menuState, setMenu] = useState(mnState);
@@ -75,8 +77,11 @@ export default () => {
       .collection("knives-shop")
       .doc("categories")
       .set(result);
-    console.log(result);
+
+    console.log(result.categoriesList);
     setMenu(newObj);
+    dispatch(categoryLoaded(result.categoriesList));
+    dispatch(emptyCategoryLoaded(result.emptyCategories));
     setInput("");
   };
 
