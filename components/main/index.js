@@ -12,42 +12,42 @@ import Link from "next/link";
 const Main = () => {
 	const slideProducts = [
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Нож "Бекас"',
 			price: 1990,
 		},
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Подушка "Бекас"',
 			price: 1990,
 		},
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Подушка "Бекас"',
 			price: 1990,
 		},
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Подушка "Бекас"',
 			price: 1990,
 		},
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Подушка "Бекас"',
 			price: 1990,
 		},
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Подушка "Бекас"',
 			price: 1990,
 		},
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Подушка "Бекас"',
 			price: 1990,
 		},
 		{
-			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			img: "https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png",
 			title: 'Подушка "Бекас"',
 			price: 1990,
 		},
@@ -93,7 +93,7 @@ const Main = () => {
 				<img
 					className={classes.slide}
 					alt="slide"
-					src="https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png"
+					src="https://zlatonozh.ru/image/cache/catalog/tovary-drugie/air/bekas/oreh-alum/bek-o1-1000x1000.png"
 				/>
 			</Slider>
 			<div className={classes.main__btns}>
@@ -130,7 +130,7 @@ const Main = () => {
 				</div>
 				<div className={classes.prodlist + " secondSlider"}>
 					{slideProducts.map((item, id) => {
-						return <SlideBlock item={item} linkTo="/product/123451Rocket" key={id} />;
+						return <SlideBlock item={item} linkTo="/product/5296872RF" key={id} />;
 					})}
 				</div>
 			</div>
