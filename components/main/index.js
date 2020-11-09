@@ -12,44 +12,44 @@ import Link from "next/link";
 const Main = () => {
 	const slideProducts = [
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Нож "Бекас"',
+			price: 1990,
 		},
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Подушка "Бекас"',
+			price: 1990,
 		},
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Подушка "Бекас"',
+			price: 1990,
 		},
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Подушка "Бекас"',
+			price: 1990,
 		},
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Подушка "Бекас"',
+			price: 1990,
 		},
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Подушка "Бекас"',
+			price: 1990,
 		},
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Подушка "Бекас"',
+			price: 1990,
 		},
 		{
-			img: "https://images.by.prom.st/146382614_w640_h640_146382614.jpg",
-			title: 'Подушка "Экотест"',
-			price: 750,
+			img: "https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png",
+			title: 'Подушка "Бекас"',
+			price: 1990,
 		},
 	];
 	const dispatch = useDispatch();
@@ -88,20 +88,20 @@ const Main = () => {
 				<img
 					className={classes.slide}
 					alt="slide"
-					src="https://www.stolplit.ru/upload/resize_cache/iblock/802/2048_1536_1/matras_tropikana_bonnet_1600_2000.jpg"
+					src="https://images.crateandbarrel.com/is/image/Crate/Classic8inChefsKnifeSHF16/$web_pdp_main_carousel_zoom_med$/190411134925/wusthof-classic-8-chefs-knife.jpg"
 				/>
 				<img
 					className={classes.slide}
 					alt="slide"
-					src="https://beautyson.ru/upload/iblock/e69/e69de7d8484253e4456e7a7622dae5f3.jpg"
+					src="https://rhinelandcutlery.com/rl-content/uploads/2014/07/image-1.png"
 				/>
 			</Slider>
 			<div className={classes.main__btns}>
-				<Link href="/catalog/beds">
-					<a className={classes.btn}>Матрасы</a>
+				<Link href="/catalog/knives">
+					<a className={classes.btn}>Ножи</a>
 				</Link>
-				<Link href="/catalog/beds">
-					<a className={classes.btn}>Подушки</a>
+				<Link href="/catalog/chehli">
+					<a className={classes.btn}>Чехлы</a>
 				</Link>
 			</div>
 			<div className={classes.main__sale}>
