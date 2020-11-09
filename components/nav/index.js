@@ -45,7 +45,7 @@ const Header = () => {
 							closeMenu();
 							document.querySelector("body").classList.remove("lock");
 						}}>
-							Matrazz
+							NOZHI
             		</a>
 					</Link>
 				</span>

@@ -85,6 +85,7 @@ export default () => {
     setInput("");
   };
 
+
   return (
     <div className={classes.wrapper}>
       <span className={classes.infoBlock}>Добавление подкатегории</span>
